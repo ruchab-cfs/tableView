@@ -30,11 +30,13 @@ class ViewController: UIViewController,
     func tableView(_ tableView: UITableView,numberOfRowsInSection setion: Int) -> Int {
         return arrdata.count
     }
+    
     func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         cell.textLabel?.text = arrdata[indexPath.row]
         return cell
     }
+    
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }
